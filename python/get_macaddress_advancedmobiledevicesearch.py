@@ -57,7 +57,7 @@ def main() -> None:
         except json.decoder.JSONDecodeError:
             continue
 
-    with open("mits_ipad_wireless_macs.csv", "w", newline="") as f:
+    with open("ipad_wireless_macs.csv", "w", newline="") as f:
         w = csv.writer(f)
         w.writerows(data.items())
 
